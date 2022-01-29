@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #e0e0e0, white);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Montserrat', sans-serif;
+	height: 100vh;
+	margin: -20px 0 50px;
+}
+
+footer {
+    background-color: #e0e0e0;
+    font-size: 14px;
+    bottom: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+
+footer nav{
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+a{
+    text-decoration: none;
+    color: #1B4332;
+}
+
+h1{
+    visibility: hidden;
+}
+
+
+header nav{
+    margin: 15px 0;
+    display:flex;
+    justify-content: space-around;
+}
+
+header {
+    background-image: linear-gradient(to right, #2D6A4F, #D8F3DC);
+    font-size: 20px;
+    font-weight: 500;
+    top: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+
+#settings{
+    color:#B7E4C7;
+}
+
+.container {
+	background-color: #fff;
+    position: absolute;
+    top: 20%;
+    border-radius: 15px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+	min-height: 480px;
+    padding: 15px 25px;
+    width: 100%;
+    max-width: 950px;
+    display: flex;
+    flex-direction: row;
+    text-align:center;
+    text-transform: uppercase;
+}
+
+.option{
+    border-right: 1px solid #e1f1ff;
+}
+
+.option:last-child{
+    border-right: none;
+}
+
+img{
+    max-width:100%;
+    margin-bottom: 40px;
+}
+
+.option-button{
+ 
+    border: 1px solid #95D5B2;
+    border-radius: 15px;
+    padding: 20px 40px; 
+    font-weight:600;
+    background-color: #D8F3DC;
+    color: #2D6A4F;
+    transition: background-color 200ms ease-in-out;
+
+}
+
+.option-button.is-featured{
+
+    background-color: #40916C;
+    color: white;
+}
+
+.option-button:hover, .option-button:focus{
+	background-color: #95D5B2;
+}
+
+.option-button.is-featured:hover, .option-button.is-featured:focus{
+    background-color: white;
+    color: #2D6A4F;
+}
+
+
+
