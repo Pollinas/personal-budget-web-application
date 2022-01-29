@@ -22,6 +22,12 @@ h1 {
     color: #40916C;
 }
 
+#welcome{
+	font-weight: bold;
+	margin: 0;
+    color: #74C69D;
+}
+
 h2 {
 	text-align: center;
 }
@@ -59,6 +65,11 @@ button {
 	transition: transform 80ms ease-in;
 }
 
+#login{
+	background-color:#74C69D;
+	border: 1px solid #40916C;
+}
+
 button:active {
 	transform: scale(0.95);
 }
@@ -68,7 +79,7 @@ button:focus, button:hover {
     cursor: pointer;
 }
 
-#signIn {
+#signIn, #signUp {
 	background-color: transparent;
 	border-color: #FFFFFF;
 }
@@ -87,6 +98,7 @@ form {
 input {
 	background-color: #eee;
     border:none;
+	border-radius: 15px;
 	padding: 12px 15px;
 	margin: 8px 0;
 	width: 100%;
@@ -112,23 +124,81 @@ label{
 
 .sign-up-container {
 	
+	position: absolute;
+	width: 50%;  
+	top: 0;
+	height: 100%;
+}
+
+.sign-in-container {
+	
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 50%;
+	height: 100%;
+}
+
+
+.right-container{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 50%;
+	height: 100%;
+}
+
+.sign-in-container{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 50%;
+	height: 100%;
+}
+
+.left {
+	background-image: linear-gradient(to left, #D8F3DC, #52B788);
+    color: white;
+	height: 100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column; 
+    padding: 0 40px;
+    width: 100%;
+}
+
+.left-container {
+	position: absolute;
 	width: 50%;  
 	top: 0;
 	height: 100%;
 }
 
 
-.right-container {
-	position: absolute;
+.right {
+	background-image: linear-gradient(to right, #B7E4C7, #40916C);
+    color: white;
+	height: 100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column; 
+    padding: 0 40px;
+    width: 100%;
+}
+
+.left-container {
+	width: 50%;  
 	top: 0;
-	left: 50%;
-	width: 50%;
 	height: 100%;
 
 }
 
 
-.right {
+.left {
 	background-image: linear-gradient(to right, #B7E4C7, #40916C);
     color: white;
 	height: 100%;
