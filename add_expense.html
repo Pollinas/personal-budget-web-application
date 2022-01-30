@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="add_expense.css">
+    <title>Add_Expense</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a id="settings" href="">Ustawienia</a>
+            <a id="logOut" href="">Wyloguj się</a>
+        </nav>
+    </header>
+
+    <div class="container" id="container">
+
+
+        <form action="">
+            <h1>Wydatek</h1>
+            <label for="date">data</label>
+            <input type="date" id="date" required>
+            <br>
+            <label for="">sposób płatności</label>
+            <select name="" id="" required>
+                <option value="cash">Gotówka</option>
+                <option value="credit card">Karta kredytowa</option>
+                <option value="debit card">Karta debetowa</option>
+            </select>
+            <br>
+            <label for="">kategoria</label>
+            <select name="" id="" required>
+                <option value="food">Jedzenie</option>
+                <option value="rent">Mieszkanie</option>
+                <option value="transportation">Transport</option>
+                <option value="telecomunication">Telekomunikacja</option>
+                <option value="health care">Opieka zdrowotna</option>
+                <option value="clothing">Ubranie</option>
+                <option value="hygiene">Higiena</option>
+                <option value="children">Dzieci</option>
+                <option value="entertainment">Rzrywka</option>
+                <option value="travel">Podróże</option>
+                <option value="schooling">Szkolenia</option>
+                <option value="books">Książki</option>
+                <option value="savings">Oszczędności</option>
+                <option value="reirement">Na emeryturę</option>
+                <option value="debetowa">Spłata długów</option>
+                <option value="donation">Darowizna</option>
+                <option value="other">Inne wydatki</option>
+
+            </select>
+            <br>
+            <button>Dodaj</button>
+            <br>
+            <button id="abort">Anuluj</button>
+        </form>
+
+        <span id="quote"><i>Biednym jest nie ten, kto ma mało, ale ten, kto tęskni za tym, by mieć
+                więcej.</i>
+            <hr>Seneka Młodszy
+        </span>
+
+    </div>
+
+    <footer>
+        <a href="">Kontakt</a>
+        <a href="">Pomoc</a>
+    </footer>
+
+</body>
+
+</html>
