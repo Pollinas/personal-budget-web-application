@@ -28,7 +28,6 @@ footer nav{
     margin: 10px 0;
     display: flex;
     justify-content: space-evenly;
-    j
 }
 
 a{
@@ -236,3 +235,10 @@ h1 {
     font-size: 25px; 
     color: #74C69D;
 }
+
+select, option{
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #a8e6cf;
+}
+

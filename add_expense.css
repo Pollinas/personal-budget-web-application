@@ -58,24 +58,32 @@ header {
 }
 
 .container {
-	background-color: #fff;
+    background-size: 100%;
+    background-image: url("https://images.unsplash.com/photo-1438762398043-ac196c2fa1e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Z29sZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60");
     position: absolute;
     top: 20%;
     border-radius: 15px;
   	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
 			0 10px 10px rgba(0,0,0,0.22);
-	min-height: 480px;
+	height: auto;
     padding: 15px 25px;
-    width: 600px;
+    width: auto;
 	max-width: 100%;
 	min-height: 480px;
     display: flex;
+    align-items: center;
     text-align: center;
     text-transform: uppercase;
+    color:white;
+}
+
+select{
+    padding: 5px;
+    background-color: rgba(255,255,255,100%);
+    border-radius: 15px;
 }
 
 form{
-    background-color: #FFFFFF;
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
@@ -93,22 +101,7 @@ input{
 	width: 100%;
     color:#081C15;
 }
-span{
-    background-image: linear-gradient(to bottom, #e0e0e0, white);
-    display: flex;
-    position:sticky;
-    border-radius: 15px;
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
-    margin: 20% 0;
-    width: 50%;
-    text-size-adjust: 20%;
-    padding:20px;
-    line-height: 1.5;
-    display: inline-block;
-    color: #2D6A4F;
-}
+
 
 h1{
     color:#95D5B2;
