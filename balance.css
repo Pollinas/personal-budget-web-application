@@ -207,6 +207,7 @@ padding: 20px 40px;
 font-weight:600;
 background-color: #40916C;
 color: white;
+text-transform: uppercase;
 }
 
 button:active {
@@ -239,6 +240,7 @@ h1 {
 select, option{
     padding: 15px;
     border-radius: 15px;
-    background-color: #a8e6cf;
+    border: 1px solid lightgray;
+    background-color: white;
 }
 
