@@ -91,7 +91,6 @@ img{
 }
 
 .option-button{
- 
     border: 1px solid #95D5B2;
     border-radius: 15px;
     padding: 20px 40px; 
@@ -99,23 +98,17 @@ img{
     background-color: #D8F3DC;
     color: #2D6A4F;
     transition: background-color 200ms ease-in-out;
-
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+    0 10px 10px rgba(0,0,0,0.22);
 }
 
-.option-button.is-featured{
 
-    background-color: #40916C;
-    color: white;
-}
 
 .option-button:hover, .option-button:focus{
 	background-color: #95D5B2;
 }
 
-.option-button.is-featured:hover, .option-button.is-featured:focus{
-    background-color: white;
-    color: #2D6A4F;
-}
+
 
 
 
