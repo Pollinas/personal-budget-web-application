@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="balance.css">
+    <title>Display_Balance</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a id="settings" href="">Ustawienia</a>
+            <a id="logOut" href="">Wyloguj się</a>
+        </nav>
+    </header>
+
+    <div class="container" id="container">
+
+        <div class="panel-header">
+            <span>
+                <h1>Bilans</h1>
+            </span>
+            <span>
+                <select name="" id="">
+                    <option value="this-month">z tego miesiąca</option>
+                    <option value="last-month">z ubiegłego miesiąca</option>
+                    <option value="selected-time">z wybranego okresu</option>
+                </select>
+            </span>
+        </div>
+
+        <div class="table-chart-panel">
+
+            <div class="panel">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="4" rowspan="2">Przychody</th>
+                        </tr>
+                        <colgroup span="4"></colgroup>
+                        <tr>
+                            <th>Data</th>
+                            <th>Kwota</th>
+                            <th>Kategoria</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="salary">
+                            <td>1900/12/10</td>
+                            <td>1000</td>
+                            <td>Wynagrodzenie</td>
+                        </tr>
+                        <tr class="bank-interest">
+                            <td>1900/12/10</td>
+                            <td>1000</td>
+                            <td>Odsetki bankowe</td>
+                        </tr>
+                        <tr class="allegro-sale">
+                            <td>1900/12/10</td>
+                            <td>1000</td>
+                            <td>Sprzedaż na allegro</td>
+                        </tr>
+                        <tr class="other">
+                            <td>1900/12/10</td>
+                            <td>1000</td>
+                            <td>Inne</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="pie-chart" id="income-pie-chart"></div>
+            </div>
+            <div class="panel">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="4" rowspan="2">Wydatki</th>
+                        </tr>
+                        <colgroup span="4"></colgroup>
+                        <tr>
+                            <th>Data</th>
+                            <th>Kwota</th>
+                            <th>Kategoria</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="food">
+                            <td>1900/12/10</td>
+                            <td>1000</td>
+                            <td>Jedzenie</td>
+                        </tr>
+                        <tr class="rent">
+                            <td>1900/12/10</td>
+                            <td>1000</td>
+                            <td>Mieszkanie</td>
+                        </tr>
+                        <tr class="transportation">
+                            <td>1900/12/10</td>
+                            <td>1000</td>
+                            <td>Transport</td>
+                        </tr>
+                        <tr class="telecomunication">
+                            <td>1900/12/10</td>
+                            <td>1000</td>
+                            <td>Telekomunikacja</td>
+                        </tr>
+                        <tr class="health-care">
+                            <td>1900/12/10</td>
+                            <td>1000</td>
+                            <td>Opieka zdrowotna</td>
+                        </tr>
+                        <tr class="clothing">
+                            <td>1900/12/10</td>
+                            <td>1000</td>
+                            <td>Ubrania</td>
+                        </tr>
+                        <tr class="hygiene">
+                            <td>1900/12/10</td>
+                            <td>1000</td>
+                            <td>Higiena</td>
+                        </tr>
+                        <tr class="children">
+                            <td>1900/12/10</td>
+                            <td>1000</td>
+                            <td>Dzieci</td>
+                        </tr>
+                        <tr class="entertainment">
+                            <td>1900/12/10</td>
+                            <td>1000</td>
+                            <td>Rozrywka</td>
+                        </tr>
+                        <tr class="travel">
+                            <td>1900/12/10</td>
+                            <td>1000</td>
+                            <td>Podróże</td>
+                        </tr>
+                        <tr class="schooling">
+                            <td>1900/12/10</td>
+                            <td>1000</td>
+                            <td>Szkolenia</td>
+                        </tr>
+                        <tr class="books">
+                            <td>1900/12/10</td>
+                            <td>1000</td>
+                            <td>Książki</td>
+                        </tr>
+                        <tr class="savings">
+                            <td>1900/12/10</td>
+                            <td>1000</td>
+                            <td>Oszczędności</td>
+                        </tr>
+                        <tr class="retirement">
+                            <td>1900/12/10</td>
+                            <td>1000</td>
+                            <td>Na emeryturę</td>
+                        </tr>
+                        <tr class="debt">
+                            <td>1900/12/10</td>
+                            <td>1000</td>
+                            <td>Spłata długów</td>
+                        </tr>
+                        <tr class="donation">
+                            <td>1900/12/10</td>
+                            <td>4000</td>
+                            <td>Darowizna</td>
+                        </tr>
+                        <tr class="other">
+                            <td>1900/12/10</td>
+                            <td>1000</td>
+                            <td>Inne</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="pie-chart" id="expense-pie-chart"></div>
+
+            </div>
+        </div>
+
+
+        <div class="calculate"><button>Oblicz bilans</button>
+        </div>
+
+
+        <footer>
+            <a href="">Kontakt</a>
+            <a href="">Pomoc</a>
+        </footer>
+
+</body>
+
+</html>
