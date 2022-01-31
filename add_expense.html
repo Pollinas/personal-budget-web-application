@@ -21,13 +21,17 @@
     <div class="container" id="container">
 
 
-        <form action="">
+        <form action="#">
             <h1>Wydatek</h1>
             <label for="date">data</label>
             <input type="date" id="date" required>
             <br>
+            <label for="amount">Kwota wydatku</label>
+            <input type="number" id="amount" required>
+            <br>
             <label for="payment-method">sposób płatności</label>
             <select name="payment-method" id="payment-method" required>
+                <option value="">Wybierz sposób płatności</option>
                 <option value="cash">Gotówka</option>
                 <option value="credit card">Karta kredytowa</option>
                 <option value="debit card">Karta debetowa</option>
@@ -35,6 +39,7 @@
             <br>
             <label for="category">kategoria</label>
             <select name="category" id="category" required>
+                <option value="">Wybierz kategorię</option>
                 <option value="food">Jedzenie</option>
                 <option value="rent">Mieszkanie</option>
                 <option value="transportation">Transport</option>
